@@ -49,7 +49,6 @@ function App() {
   const [isCorrectAnswer, setIsCorrectAnswer] = useState<isAnswer | undefined>(
     undefined
   );
-  const [visible, setVisible] = useState(true);
 
   const generateColors = () => {
     const actualColor = generateRandomColor();
@@ -91,7 +90,7 @@ function App() {
         <div className="answer">
           {isCorrectAnswer === isAnswer.Correct && (
             <div>
-              <Expire delay={4000}>Correct! </Expire>
+              <Expire delay={4000}>Correct!</Expire>
             </div>
           )}
         </div>
